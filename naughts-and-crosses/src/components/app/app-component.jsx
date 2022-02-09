@@ -1,7 +1,7 @@
 import { App } from "./app-styles";
 
-function App() {
+function AppComponent() {
   return <App></App>;
 }
 
-export default App;
+export default AppComponent;
