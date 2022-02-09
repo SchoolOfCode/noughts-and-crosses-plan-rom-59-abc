@@ -18,11 +18,15 @@ function GameComponent() {
     console.log("reset game");
   }
 
+  function toggleXMove() {
+    setXMove(!XMove);
+  }
+
   return (
     <Game>
       <HeaderComponent />
       <PlayerMoveComponent move={XMove ? "X" : "O"} />
-      <BoardComponent board={board} />
+      <BoardComponent board={board} XMove={XMove} toggleXMove={toggleXMove} />
       <ResultComponent result="X Wins" />
       <ResetComponent onClick={reset} />
     </Game>
