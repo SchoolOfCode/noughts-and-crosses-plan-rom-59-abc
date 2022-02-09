@@ -36,6 +36,3 @@ function ButtonComponent({ XMove, toggleClick, key, reset, result }) {
 }
 
 export default ButtonComponent;
-// onClick:
-// insert the symbol into place of whoevers move it is
-// toggle XMove
